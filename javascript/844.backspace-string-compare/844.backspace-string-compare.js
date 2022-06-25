@@ -39,6 +39,7 @@ var backspaceCompare = function(s, t) {
                 }
             }
         }else{
+            // s[-1] === undefined !!
             if(s[p1] !== t[p2]){
                 return false;
             }else{
@@ -46,8 +47,6 @@ var backspaceCompare = function(s, t) {
                 p2--;
             }
         }
-
-
     }
 
     return true;
